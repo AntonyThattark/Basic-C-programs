@@ -1,0 +1,59 @@
+************************************************************************************************
+				
+ANTONY CIJO									DATE:10/12/2021	
+
+S3 IT										ROLL NO:14
+										
+				ADD TWO MATRIX
+
+************************************************************************************************
+PROGRAM
+*******
+
+rows = int(input("Enter the Number of rows: " ))
+column = int(input("Enter the Number of Columns: "))
+
+print("Enter the elements of First Matrix:")
+matrix_a= [[int(input()) for i in range(column)] for i in range(rows)]
+print("First Matrix is: ")
+for n in matrix_a:
+    print(n)
+
+print("Enter the elements of Second Matrix:")
+matrix_b= [[int(input()) for i in range(column)] for i in range(rows)]
+for n in matrix_b:
+    print(n)
+    
+result=[[0 for i in range(column)] for i in range(rows)]
+
+for i in range(rows):
+    for j in range(column):
+        result[i][j] = matrix_a[i][j]+matrix_b[i][j]
+
+print("The Sum of Above two Matrices is : ")
+for r in result:
+    print(r)
+
+SAMPLE OUTPUT
+*************
+
+Enter the Number of rows: 2
+Enter the Number of Columns: 2
+Enter the elements of First Matrix:
+1
+2
+3
+4
+First Matrix is:
+[1, 2]
+[3, 4]
+Enter the elements of Second Matrix:
+5
+6
+7
+8
+[5, 6]
+[7, 8]
+The Sum of Above two Matrices is :
+[6, 8]
+[10, 12]

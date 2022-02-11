@@ -1,0 +1,46 @@
+/************************************************************************************
+				
+ANTONY CIJO							DATE:29/11/2021	
+S3 IT										
+ROLL NO:14
+
+				LINEAR SEARCH
+
+*************************************************************************************/
+/*PROGRAM*/
+#include<stdio.h>
+main()
+{
+	int a[50],i,e,n,flag=0;
+	printf("Enter the size of array");
+	scanf("%d",&n);
+	printf("\nEnter the elements");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	printf("\nEnter the elements to be searched");
+	scanf("%d",&e);
+	for(i=0;i<n;i++)
+	 if(e==a[i])
+	  flag=1;
+	 
+	if(flag==1)
+	printf("\nThe searched element is found in the array");
+	else
+	printf("\nElement not found");
+}
+
+/*
+SAMPLE OUTPUT
+*************
+Enter the size of array5
+
+Enter the elements1
+2
+3
+4
+5
+
+Enter the elements to be searched3
+
+The searched element is found in the array
+*/

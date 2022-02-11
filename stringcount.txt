@@ -1,0 +1,41 @@
+************************************************************************************************
+				
+ANTONY CIJO									DATE:10/12/2021	
+
+S3 IT										ROLL NO:14
+										
+				COUNT THE ELEMENTS IN A STRING
+
+************************************************************************************************
+PROGRAM
+*******
+
+vowel=0
+cons=0
+words=1
+qns=0
+str=(input("Enter the string\n"))
+for i in str:
+	if(i=='a' or i=='A' or i=='E' or i=='e' or i=='i' or i=='I' or i=='o'
+ or i=='O' or i=='u' or i=='U'):
+		vowel=vowel+1
+	elif(i=='?'):
+		qns=qns+1
+	elif(i==" "):
+		words=words+1
+	else:
+		cons=cons+1
+print("\nvowels=",vowel,"\nquestions=",qns,"\nwords=",words,"\nconsonants=",cons)
+
+
+
+SAMPLE OUTPUT:
+**************
+
+Enter the string
+what is wikipedia? Wikipedia is a free online encyclopedia.
+
+vowels= 24
+questions= 1
+words= 9
+consonants= 26

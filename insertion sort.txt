@@ -1,0 +1,48 @@
+/********************************************************************************
+				
+ANTONY CIJO							DATE:06/12/2021	
+S3 IT										
+ROLL NO:14
+
+				INSERTION SORT
+
+*********************************************************************************/
+/*PROGRAM*/
+#include<stdio.h>
+main()
+{
+	int i,j,a[50],n,key;
+	printf("\nEnter the size of array:");
+	scanf("%d",&n);
+	printf("\nEnter the array elements:");
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	for(i=1;i<n;i++)
+	{
+		key=a[i];
+		j=i-1;
+		while(key<a[j]&&j>=0)
+		{
+			a[j+1]=a[j];
+			j--;
+		}
+		a[j+1]=key;
+	}
+	printf("\nSorted array is: ");
+	for(i=0;i<n;i++)
+	printf("%d ",a[i]);
+}
+/*
+SAMPLE OUTPUT
+*************
+
+Enter the size of array:5
+
+Enter the array elements:3
+5
+2
+4
+1
+
+Sorted array is: 5 4 3 2 1
+*/

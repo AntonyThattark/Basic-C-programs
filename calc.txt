@@ -1,0 +1,107 @@
+************************************************************************************************
+				
+ANTONY CIJO									DATE:17/12/2021	
+
+S3 IT										ROLL NO:14
+										
+				SIMPLE CALCULATOR
+
+************************************************************************************************
+PROGRAM
+*******
+
+def add(a,b):
+	print("The sum of\n",a,"+",b,"=",a+b)
+def subt(a,b):
+	print("The difference of\n",a,"-",b,"=",a-b)
+def multiply(a,b):
+	print("The product of\n",a,"*",b,"=",a*b)
+def divide(a,b):
+	print("The value of\n",a,"/",b,"=",a/b)
+def expo(a,b):
+	c=1
+	for i in range(b):
+		c=c*a
+	print("The the value of\n",a,"^",b,"= ",c)
+x=int(input("Enter the first value: "))
+y=int(input("Enter the second value: "))
+z=(input("Enter the operation to perform:\n+ for addition\n- for subtraction\n
+* for multiplication\n/ for division:\n^ for exponential: "))
+if (z=='+'):
+	add(x,y)
+elif(z=='-'):
+	subt(x,y)
+elif(z=='*'):
+	multiply(x,y)
+elif(z=='/'):
+	divide(x,y)
+elif(z=='^'):
+	expo(x,y)
+else:
+	print("## Invalid input ##")
+
+
+SAMPLE OUTPUT 1:
+****************
+Enter the first value: 20
+Enter the second value: 30
+Enter the operation to perform:
++ for addition
+- for subtraction
+* for multiplication
+/ for division:
+^ for exponential: +
+The sum of
+ 20 + 30 = 50
+
+SAMPLE OUTPUT 2:
+****************
+Enter the first value: 50
+Enter the second value: 20
+Enter the operation to perform:
++ for addition
+- for subtraction
+* for multiplication
+/ for division:
+^ for exponential: -
+The difference of
+ 50 - 20 = 30
+
+SAMPLE OUTPUT 3:
+****************
+Enter the first value: 10
+Enter the second value: 5
+Enter the operation to perform:
++ for addition
+- for subtraction
+* for multiplication
+/ for division:
+^ for exponential: *
+The product of
+ 10 * 5 = 50
+
+SAMPLE OUTPUT 4:
+****************
+Enter the first value: 100
+Enter the second value: 10
+Enter the operation to perform:
++ for addition
+- for subtraction
+* for multiplication
+/ for division:
+^ for exponential: /
+The value of
+ 100 / 10 = 10.0
+
+SAPLE OUTPUT 5:
+***************
+Enter the first value: 5
+Enter the second value: 3
+Enter the operation to perform:
++ for addition
+- for subtraction
+* for multiplication
+/ for division:
+^ for exponential: ^
+The the value of
+ 5 ^ 3 =  125

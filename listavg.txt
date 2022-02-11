@@ -1,0 +1,46 @@
+************************************************************************************************
+				
+ANTONY CIJO									DATE:10/12/2021	
+
+S3 IT										ROLL NO:14
+										
+				SUM AND AVERAGE OF A LIST
+
+************************************************************************************************
+PROGRAM
+*******
+
+list=[]
+n=int(input("Enter the size of list: "))
+i=0
+print("Enter the elements:")
+for i in range(0,n):
+     num=int(input())
+     list.append(num)
+print(list)
+sum=0
+for i in range(0,n):
+        sum=sum+int(list[i])
+avg=sum/n
+print("average is",avg)
+for i in list:
+	sqr=i*i
+	print("square of",i," is",sqr)
+
+SAMPLE OUTPUT
+*************
+
+Enter the size of list: 5
+Enter the elements:
+1
+2
+3
+4
+5
+[1, 2, 3, 4, 5]
+average is 3.0
+square of  1  is 1
+square of  2  is 4
+square of  3  is 9
+square of  4  is 16
+square of  5  is 25

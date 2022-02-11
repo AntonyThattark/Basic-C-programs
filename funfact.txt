@@ -1,0 +1,40 @@
+************************************************************************************************
+				
+ANTONY CIJO									DATE:17/12/2021	
+
+S3 IT										ROLL NO:14
+										
+				FACTORIAL USING FUNCTION
+
+************************************************************************************************
+PROGRAM
+*******
+
+def factorial(n):
+	if(n==0):
+		return(1)
+	else:
+		return(n*factorial(n-1))
+num=int(input("Enter the number to find the factorial: "))
+if(num<0):
+	print("Factoial dosen't exist")
+elif(num>0):
+	print("Factorial of ",num,"is",factorial(num))
+else:
+	print("Factorial of 0 is 1")
+
+
+SAMPLE OUTPUT 1:
+****************
+Enter the number to find the factorial: 4
+Factorial of  4 is 24
+
+SAMPLE OUTPUT 2:
+****************
+Enter the number to find the factorial: 0
+Factorial of 0 is 1
+
+SAMPLE OUTPUT 3:
+****************
+Enter the number to find the factorial: -2
+Factoial dosen't exist

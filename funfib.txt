@@ -1,0 +1,39 @@
+*************************************************************************************
+				
+ANTONY CIJO							DATE:17/12/2021	
+
+S3 IT								ROLL NO:14
+										
+				FIBONACCI SERIES
+
+*************************************************************************************
+PROGRAM
+*******
+
+def fib(n):
+        if (n<=1):
+                return n
+        else:
+                return(fib(n-1) + fib(n-2))
+nterms=int(input("Enter the range: "))
+if (nterms <=0):
+        print("Enter a positive integer ")
+else:
+        print("Fibonacci sequence is: ")
+        for i in range(nterms):
+                print(fib(i))
+
+SAMPLE OUTPUT 1:
+****************
+Enter the range: -5
+Enter a positive integer
+
+SAMPLE OUTPUT 2:
+****************
+Enter the range: 5
+Fibonacci sequence is:
+0
+1
+1
+2
+3

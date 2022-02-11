@@ -1,0 +1,54 @@
+/************************************************************************************************
+				
+ANTONY CIJO									DATE:29/11/2021	
+S3 IT										
+ROLL NO:14
+
+					SELECTION SORT
+
+************************************************************************************************/
+/*PROGRAM*/
+#include<stdio.h>
+main()
+{
+	int s,a[50],pos,tem,i,j;
+	printf("\nEnter the size of array: ");
+	scanf("%d",&s);
+	printf("Enter the elements:");
+	for(i=0;i<s;i++)
+	scanf("%d",&a[i]);
+	for(i=0;i<s;i++)
+	{
+		pos=i;
+		for(j=i+1;j<s;j++)
+		{
+		if(a[pos]>a[j])
+		pos=j;
+		}
+		if(pos!=i)
+		{
+		tem=a[pos];
+		a[pos]=a[i];
+		a[i]=tem;
+		}
+	}
+	printf("\nThe sorted array is: ");
+	for(i=0;i<s;i++)
+	{
+		printf("%d ",a[i]);	
+		
+	}
+}
+/*
+SAMPLE OUTPUT
+*************
+
+Enter the size of array: 5
+Enter the elements:9
+5
+7
+3
+1
+
+The sorted array is: 1 3 5 7 9
+*/

@@ -1,0 +1,27 @@
+************************************************************************************************
+				
+ANTONY CIJO									DATE:10/12/2021	
+
+S3 IT										ROLL NO:14
+										
+				FIND NUMBER OF SUBSTRING
+
+************************************************************************************************
+PROGRAM
+*******
+
+str=input("enter the string\n")
+substr=input("enter the substring\n")
+c=0
+c=str.count(substr)
+print("the substring occured is:",c)
+
+SAMPLE OUTPUT
+*************
+
+Enter the string:
+Wikipedia is a free online encyclopedia, created and edited by volunteers around the world 
+and hosted by the Wikimedia Foundation.
+Enter the substring:
+the
+The substring occured is: 2
